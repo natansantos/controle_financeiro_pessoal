@@ -33,7 +33,7 @@ export const PERIODS = [
   ...PERIODS_ARRAY[2],
 ];
 
-const BASE_URL = 'http://localhost:3001/api/transaction';
+const BASE_URL = 'https://nsantos-desafio-final.herokuapp.com/api/transaction';
 
 export async function getTransactions(period) {
   const transactions = await axios.get(`${BASE_URL}?period=${period}`);
